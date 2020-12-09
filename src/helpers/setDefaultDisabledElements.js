@@ -38,6 +38,7 @@ export default store => {
     
     disableFeatures([Feature.NotesPanel])
     disableFeatures([Feature.Measurement])
+    disableFeatures([Feature.Print])
 
   const annotationDisabled = !getHashParams('a', false);
   if (annotationDisabled) {
