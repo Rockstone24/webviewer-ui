@@ -34,6 +34,9 @@ export default store => {
       )
     );
   }
+    
+    
+    disableFeatures([feature.$apply])
 
   const annotationDisabled = !getHashParams('a', false);
   if (annotationDisabled) {
