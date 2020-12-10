@@ -180,7 +180,7 @@ if (window.CanvasRenderingContext2D) {
     'toolbarGroup-Insert',
     'toolbarGroup-Edit',
     'toolbarGroup-View',
-    'toolbarGroup-Annotate',
+    'toolbarGroup-Shapes',
     'freeTextToolGroupButton',
     'highlightToolGroupButton'
   ]);
