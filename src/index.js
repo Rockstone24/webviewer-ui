@@ -30,6 +30,7 @@ import rootReducer from 'reducers/rootReducer';
 import { persistStore } from 'redux-persist';
 import { PersistGate } from 'redux-persist/integration/react';
 import getHashParams from 'helpers/getHashParams';
+import disableElements from "./apis/disableElements";
 
 import './index.scss';
 
@@ -173,6 +174,16 @@ if (window.CanvasRenderingContext2D) {
       document.getElementById('app'),
     );
   });
+
+
+  disableElements(store)([
+    'toolbarGroup-Insert',
+    'toolbarGroup-Edit',
+    'toolbarGroup-View',
+    'toolbarGroup-Annotate',
+    'freeTextToolGroupButton',
+    'highlightToolGroupButton'
+  ]);
 }
 
 window.addEventListener('hashchange', () => {
