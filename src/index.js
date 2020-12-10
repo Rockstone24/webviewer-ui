@@ -175,15 +175,30 @@ if (window.CanvasRenderingContext2D) {
     );
   });
 
+  const queryString = window.location.href;
+  let versionNumb = parseInt(queryString.substr(-1));
+  
+  if(versionNumb === 1){
+    disableElements(store)([
+      'toolbarGroup-Insert',
+      'toolbarGroup-Edit',
+      'toolbarGroup-View',
+      'toolbarGroup-Shapes',
+    ]);
 
-  disableElements(store)([
-    'toolbarGroup-Insert',
-    'toolbarGroup-Edit',
-    'toolbarGroup-View',
-    'toolbarGroup-Shapes',
-    'freeTextToolGroupButton',
-    'highlightToolGroupButton'
-  ]);
+    if(versionNumb === 2){
+      disableElements(store)([
+        'toolbarGroup-Insert',
+        'toolbarGroup-Edit',
+        'toolbarGroup-View',
+        'toolbarGroup-Shapes',
+        'freeTextToolGroupButton',
+        'highlightToolGroupButton'
+      ]);
+    
+  }
+  
+  
 }
 
 window.addEventListener('hashchange', () => {
