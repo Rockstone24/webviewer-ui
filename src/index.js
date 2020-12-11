@@ -194,10 +194,64 @@ if (window.CanvasRenderingContext2D) {
         'toolbarGroup-Edit',
         'toolbarGroup-View',
         'toolbarGroup-Shapes',
+        
+        
+        'strikeoutToolGroupButton',
+        'squigglyToolGroupButton',
+        'stickyToolGroupButton',
         'freeTextToolGroupButton',
-        'highlightToolGroupButton'
+        'shapeToolGroupButton',
+        'freeHandToolGroupButton'
+          
       ]);
-    
+
+      if(versionNumb === 3){
+        disableElements(store)([
+          'toolbarGroup-Insert',
+          'toolbarGroup-Edit',
+          'toolbarGroup-View',
+          'toolbarGroup-Shapes',
+          
+          
+          'highlightToolGroupButton',
+          'underlineToolGroupButton',
+          'strikeoutToolGroupButton',
+          'squigglyToolGroupButton',
+          'stickyToolGroupButton',
+          'freeTextToolGroupButton',
+          'shapeToolGroupButton'
+        ]);
+
+        if(versionNumb === 4){
+          disableElements(store)([
+            'toolbarGroup-Insert',
+            'toolbarGroup-Edit',
+            'toolbarGroup-View',
+            'toolbarGroup-Shapes',
+
+
+            'highlightToolGroupButton',
+            'underlineToolGroupButton',
+            'strikeoutToolGroupButton',
+            'squigglyToolGroupButton',
+            'freeTextToolGroupButton',
+            'shapeToolGroupButton',
+            'freeHandToolGroupButton'
+          ]);
+
+          if(versionNumb === 5){
+            disableElements(store)([
+              'toolbarGroup-Insert',
+              'toolbarGroup-Edit',
+              'toolbarGroup-View',
+              'toolbarGroup-Shapes',
+
+              
+              'strikeoutToolGroupButton',
+              'squigglyToolGroupButton',
+              'freeTextToolGroupButton',
+              'shapeToolGroupButton',
+            ]);
   }
   
   
