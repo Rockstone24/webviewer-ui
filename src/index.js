@@ -188,31 +188,32 @@ if (window.CanvasRenderingContext2D) {
 
   }
 
-    if(versionNumb === 2){
+    if(versionNumb === 2) {
       disableElements(store)([
         'toolbarGroup-Insert',
         'toolbarGroup-Edit',
         'toolbarGroup-View',
         'toolbarGroup-Shapes',
-        
-        
+
+
         'strikeoutToolGroupButton',
         'squigglyToolGroupButton',
         'stickyToolGroupButton',
         'freeTextToolGroupButton',
         'shapeToolGroupButton',
         'freeHandToolGroupButton'
-          
-      ]);
 
-      if(versionNumb === 3){
+      ]);
+    }
+
+      if(versionNumb === 3) {
         disableElements(store)([
           'toolbarGroup-Insert',
           'toolbarGroup-Edit',
           'toolbarGroup-View',
           'toolbarGroup-Shapes',
-          
-          
+
+
           'highlightToolGroupButton',
           'underlineToolGroupButton',
           'strikeoutToolGroupButton',
@@ -221,8 +222,9 @@ if (window.CanvasRenderingContext2D) {
           'freeTextToolGroupButton',
           'shapeToolGroupButton'
         ]);
+      }
 
-        if(versionNumb === 4){
+        if(versionNumb === 4) {
           disableElements(store)([
             'toolbarGroup-Insert',
             'toolbarGroup-Edit',
@@ -238,6 +240,8 @@ if (window.CanvasRenderingContext2D) {
             'shapeToolGroupButton',
             'freeHandToolGroupButton'
           ]);
+
+        }
 
           if(versionNumb === 5){
             disableElements(store)([
