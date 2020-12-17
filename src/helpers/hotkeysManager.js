@@ -113,7 +113,7 @@ const NOOP = () => {};
  * @property {string} U Select the AnnotationCreateTextUnderline tool
  */
 export const Keys = {
-  CTRL_SHIFT_EQUAL: 'ctrl+shift+=',
+ /* CTRL_SHIFT_EQUAL: 'ctrl+shift+=',
   COMMAND_SHIFT_EQUAL: 'command+shift+=',
   CTRL_SHIFT_MINUS: 'ctrl+shift+-',
   COMMAND_SHIFT_MINUS: 'command+shift+-',
@@ -160,7 +160,7 @@ export const Keys = {
   G: 'g',
   H: 'h',
   K: 'k',
-  U: 'u',
+  U: 'u', */
 };
 
 export function concatKeys(...keys) {
@@ -274,11 +274,11 @@ WebViewer(...)
 
     return {
       [`${Keys.CTRL_SHIFT_EQUAL}, ${Keys.COMMAND_SHIFT_EQUAL}`]: e => {
-        e.preventDefault();
-        core.rotateClockwise();
+     //   e.preventDefault();
+      //  core.rotateClockwise();
       },
       [`${Keys.CTRL_SHIFT_MINUS}, ${Keys.COMMAND_SHIFT_MINUS}`]: e => {
-        e.preventDefault();
+   //     e.preventDefault();
         core.rotateCounterClockwise();
       },
       [`${Keys.CTRL_C}, ${Keys.COMMAND_C}`]: () => {
@@ -413,44 +413,44 @@ WebViewer(...)
         );
       },
       [`${Keys.P}`]: this.createToolHotkeyHandler(() => {
-        setToolModeAndGroup(store, 'Pan');
+        setToolModeAndGroup(store, '');
       }),
       [`${Keys.A}`]: this.createToolHotkeyHandler(() => {
-        setToolModeAndGroup(store, 'AnnotationCreateArrow');
+        setToolModeAndGroup(store, '');
       }),
       [`${Keys.C}`]: this.createToolHotkeyHandler(() => {
-        setToolModeAndGroup(store, 'AnnotationCreateCallout');
+        setToolModeAndGroup(store, '');
       }),
       [`${Keys.E}`]: this.createToolHotkeyHandler(() => {
-        setToolModeAndGroup(store, 'AnnotationEraserTool');
+        setToolModeAndGroup(store, '');
       }),
       [`${Keys.F}`]: this.createToolHotkeyHandler(() => {
-        setToolModeAndGroup(store, 'AnnotationCreateFreeHand');
+        setToolModeAndGroup(store, '');
       }),
       [`${Keys.I}`]: this.createToolHotkeyHandler(() => {
-        setToolModeAndGroup(store, 'AnnotationCreateStamp');
+        setToolModeAndGroup(store, '');
       }),
       [`${Keys.L}`]: this.createToolHotkeyHandler(() => {
-        setToolModeAndGroup(store, 'AnnotationCreateLine');
+        setToolModeAndGroup(store, '');
       }),
       [`${Keys.N}`]: this.createToolHotkeyHandler(() => {
-        setToolModeAndGroup(store, 'AnnotationCreateSticky');
+        setToolModeAndGroup(store, '');
       }),
       [`${Keys.O}`]: this.createToolHotkeyHandler(() => {
-        setToolModeAndGroup(store, 'AnnotationCreateEllipse');
+        setToolModeAndGroup(store, '');
       }),
       [`${Keys.R}`]: this.createToolHotkeyHandler(() => {
-        setToolModeAndGroup(store, 'AnnotationCreateRectangle');
+        setToolModeAndGroup(store, '');
       }),
       [`${Keys.Q}`]: this.createToolHotkeyHandler(() => {
-        setToolModeAndGroup(store, 'AnnotationCreateRubberStamp');
+        setToolModeAndGroup(store, '');
       }),
       [`${Keys.T}`]: this.createToolHotkeyHandler(() => {
-        setToolModeAndGroup(store, 'AnnotationCreateFreeText');
+        setToolModeAndGroup(store, '');
       }),
       [`${Keys.S}`]: this.createToolHotkeyHandler(() => {
         const sigToolButton = document.querySelector(
-          '[data-element="signatureToolButton"] .Button'
+          []
         );
 
         sigToolButton?.click();
@@ -459,28 +459,28 @@ WebViewer(...)
         if (core.getSelectedText()) {
           createTextAnnotationAndSelect(dispatch, window.Annotations.TextSquigglyAnnotation);
         } else {
-          setToolModeAndGroup(store, 'AnnotationCreateTextSquiggly');
+          setToolModeAndGroup(store, '');
         }
       }),
       [`${Keys.H}`]: this.createToolHotkeyHandler(() => {
         if (core.getSelectedText()) {
           createTextAnnotationAndSelect(dispatch, window.Annotations.TextHighlightAnnotation);
         } else {
-          setToolModeAndGroup(store, 'AnnotationCreateTextHighlight');
+          setToolModeAndGroup(store, '');
         }
       }),
       [`${Keys.K}`]: this.createToolHotkeyHandler(() => {
         if (core.getSelectedText()) {
           createTextAnnotationAndSelect(dispatch, window.Annotations.TextStrikeoutAnnotation);
         } else {
-          setToolModeAndGroup(store, 'AnnotationCreateTextStrikeout');
+          setToolModeAndGroup(store, '');
         }
       }),
       [`${Keys.U}`]: this.createToolHotkeyHandler(() => {
         if (core.getSelectedText()) {
           createTextAnnotationAndSelect(dispatch, window.Annotations.TextUnderlineAnnotation);
         } else {
-          setToolModeAndGroup(store, 'AnnotationCreateTextUnderline');
+          setToolModeAndGroup(store, '');
         }
       }),
     };
