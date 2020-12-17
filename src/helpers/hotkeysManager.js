@@ -16,7 +16,7 @@ import selectors from 'selectors';
 
 // prettier-ignore
 const keyMap = {
-  "arrow":                  "A",
+ /* "arrow":                  "A",
   "callout":                "C",
   "copy":                   "Control+C",
   "delete":                 "Delete",
@@ -44,7 +44,7 @@ const keyMap = {
   "richText.bold":          "Control+B",
   "richText.italic":        "Control+I",
   "richText.underline":     "Control+L",
-  "richText.strikeout":     "Control+K",
+  "richText.strikeout":     "Control+K", */
 };
 
 export function shortcutAria(shortcut) {
