@@ -509,7 +509,7 @@ WebViewer(...)
   },
   getHotkeyByToolName(toolName) {
     const map = {
-      AnnotationEdit: 'escape',
+    /*  AnnotationEdit: 'escape',
       Pan: 'p',
       AnnotationCreateArrow: 'a',
       AnnotationCreateCallout: 'c',
@@ -526,7 +526,7 @@ WebViewer(...)
       AnnotationCreateTextHighlight: 'h',
       AnnotationCreateTextStrikeout: 'k',
       AnnotationCreateTextUnderline: 'u',
-      AnnotationCreateRubberStamp: 'q',
+      AnnotationCreateRubberStamp: 'q', */
     };
 
     return map[toolName];

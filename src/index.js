@@ -201,7 +201,8 @@ if (window.CanvasRenderingContext2D) {
         'stickyToolGroupButton',
         'freeTextToolGroupButton',
         'shapeToolGroupButton',
-        'freeHandToolGroupButton'
+        'freeHandToolGroupButton',
+          'contextMenuPopup'
 
       ]);
     }
@@ -220,7 +221,9 @@ if (window.CanvasRenderingContext2D) {
           'squigglyToolGroupButton',
           'stickyToolGroupButton',
           'freeTextToolGroupButton',
-          'shapeToolGroupButton'
+          'shapeToolGroupButton',
+
+          'contextMenuPopup'
         ]);
       }
 
@@ -238,7 +241,9 @@ if (window.CanvasRenderingContext2D) {
             'squigglyToolGroupButton',
             'freeTextToolGroupButton',
             'shapeToolGroupButton',
-            'freeHandToolGroupButton'
+            'freeHandToolGroupButton',
+
+            'contextMenuPopup'
           ]);
 
         }
@@ -255,6 +260,8 @@ if (window.CanvasRenderingContext2D) {
               'squigglyToolGroupButton',
               'freeTextToolGroupButton',
               'shapeToolGroupButton',
+
+              'contextMenuPopup'
             ]);
   }
   
